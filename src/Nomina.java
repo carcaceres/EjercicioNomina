@@ -1,3 +1,6 @@
+
+import java.text.DecimalFormat;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -19,7 +22,9 @@ public class Nomina {
     private double descuentoNomina;
     private double sueldo;
     private String cargo;
-
+    DecimalFormat df = new DecimalFormat("\"###,###.##\"");
+    DecimalFormat df1 = new DecimalFormat("\"###,###\"");
+   
     public double descuentoSalud() {
         double salud;
         salud = sueldo * 0.085;
@@ -58,14 +63,16 @@ public class Nomina {
             System.out.println("Segundo Nombre Empleado: "+segNom);
             System.out.println("primer Apellido Empleado: "+primApel);
             System.out.println("Segundo Apellido Empleado: "+segApel);
-            System.out.println("Descuento en Salud(-): "+descuentoSalud());
+            System.out.println("Sueldo : "+df.format(sueldo));
+            
+            System.out.println("Descuento en Salud(-): "+df1.format(descuentoSalud()));
             System.out.println("Descuento en Pension(-):"+descuentoPension());
             if(descuentoNomina!=0){
-              System.out.println("Descuento Nomina(-):"+descuentoNomina);
+              System.out.println("Descuento Nomina(-):"+df.format(descuentoNomina));
              
             }
-            System.out.println("--------------------------");
-            System.out.println("Pago: "+totalAPagarNomina());
+            System.out.println("----------------------------------------------");
+            System.out.println("Pago:                   "+totalAPagarNomina());
       
     }
 
