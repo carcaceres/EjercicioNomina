@@ -12,5 +12,9 @@ Importar Ejercicio Netbeans 8.x
 
 
 ![Alt text](https://github.com/carcaceres/EjercicioNomina/blob/master/imagen/pantalla1.png "pantalla1")
+
 ![Alt text](https://github.com/carcaceres/EjercicioNomina/blob/master/imagen/pantalla2.png "patalla2")
+
+Diagrama De Clases
+
 ![Alt text](https://github.com/carcaceres/EjercicioNomina/blob/master/imagen/uml-clase.png "diagramaclase")
